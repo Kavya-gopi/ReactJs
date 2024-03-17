@@ -6,6 +6,7 @@ import Car from './components/Car';
 import reportWebVitals from './reportWebVitals';
 import LearnReact from './components/ReactLearn';
 import Apple from './components/AppleClass';
+import Garage from './components/Garage';
 
 function ReactIntro(){
   return(
@@ -17,10 +18,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ReactIntro></ReactIntro>
-    <Car></Car>
+    {/* <Car></Car> */}
     <LearnReact></LearnReact>
     <Apple></Apple>
     <App />
+    <Garage></Garage>
   </React.StrictMode>
 );
 
