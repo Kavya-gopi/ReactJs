@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Greet from './Greet';
 import Welcome from './components/WelcomeClass';
+import Garage from './components/Garage';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       </header> */}
       <Greet></Greet>
       <Welcome></Welcome>
+      <Garage></Garage>
     </div>
   );
 }

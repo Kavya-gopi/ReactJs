@@ -19,10 +19,10 @@ root.render(
   <React.StrictMode>
     <ReactIntro></ReactIntro>
     {/* <Car></Car> */}
-    <LearnReact></LearnReact>
-    <Apple></Apple>
+    {/* <LearnReact></LearnReact> */}
+    {/* <Apple></Apple> */}
     <App />
-    <Garage></Garage>
+    {/* <Garage></Garage> */}
   </React.StrictMode>
 );
 

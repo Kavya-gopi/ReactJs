@@ -7,6 +7,7 @@ function Car(props){
     return(<>
        <h2>Hi, Iam a Car Component</h2>
        <h3>{text}</h3>
+       <h4>{carBrand}</h4>
     </>)
 }
 
