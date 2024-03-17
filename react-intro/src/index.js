@@ -20,7 +20,7 @@ root.render(
     <Car></Car>
     <LearnReact></LearnReact>
     <Apple></Apple>
-    {/* <App /> */}
+    <App />
   </React.StrictMode>
 );
 
