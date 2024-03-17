@@ -1,10 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-import Greet from './Greet';
-import Welcome from './components/WelcomeClass';
-import Garage from './components/Garage';
+import logo from "./logo.svg";
+import "./App.css";
+import Greet from "./Greet";
+import Welcome from "./components/WelcomeClass";
+import Garage from "./components/Garage";
+import Lights from "./components/ConditionalRenderingDemo";
 
 function App() {
+  const isLightOn = true;
   return (
     <div className="App">
       {/* <header className="App-header">
@@ -24,6 +26,8 @@ function App() {
       <Greet></Greet>
       <Welcome></Welcome>
       <Garage></Garage>
+      <Lights />
+      {isLightOn ? <h2>On</h2> : <h2>Off</h2>}
     </div>
   );
 }
