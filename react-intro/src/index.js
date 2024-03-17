@@ -5,6 +5,7 @@ import App from './App';
 import Car from './components/Car';
 import reportWebVitals from './reportWebVitals';
 import LearnReact from './components/ReactLearn';
+import Apple from './components/AppleClass';
 
 function ReactIntro(){
   return(
@@ -18,6 +19,7 @@ root.render(
     <ReactIntro></ReactIntro>
     <Car></Car>
     <LearnReact></LearnReact>
+    <Apple></Apple>
     {/* <App /> */}
   </React.StrictMode>
 );
