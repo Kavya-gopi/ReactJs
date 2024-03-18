@@ -7,6 +7,11 @@ import reportWebVitals from './reportWebVitals';
 import LearnReact from './components/ReactLearn';
 import Apple from './components/AppleClass';
 import Garage from './components/Garage';
+import Header from './components/header';
+import Color from './components/useStateDemo';
+import Brand from './components/useStateUsingClass';
+import Car1 from './components/Car1';
+import Scooter from './components/Scooter';
 
 function ReactIntro(){
   return(
@@ -17,12 +22,17 @@ function ReactIntro(){
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ReactIntro></ReactIntro>
+    {/* <ReactIntro></ReactIntro> */}
     {/* <Car></Car> */}
     {/* <LearnReact></LearnReact> */}
     {/* <Apple></Apple> */}
-    <App />
+    {/* <App /> */}
     {/* <Garage></Garage> */}
+    {/* <Header></Header> */}
+    {/* <Color></Color>
+    <Brand></Brand> */}
+    {/* <Car1></Car1> */}
+    <Scooter></Scooter>
   </React.StrictMode>
 );
 
