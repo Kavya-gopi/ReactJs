@@ -12,6 +12,7 @@ import Color from './components/useStateDemo';
 import Brand from './components/useStateUsingClass';
 import Car1 from './components/Car1';
 import Scooter from './components/Scooter';
+import ArrCompUpdate from './components/UpdatingArraysUseState';
 
 function ReactIntro(){
   return(
@@ -29,10 +30,11 @@ root.render(
     {/* <App /> */}
     {/* <Garage></Garage> */}
     {/* <Header></Header> */}
-    {/* <Color></Color>
-    <Brand></Brand> */}
+    {/* <Color></Color> */}
+    <Brand></Brand>
+    <ArrCompUpdate></ArrCompUpdate>
     {/* <Car1></Car1> */}
-    <Scooter></Scooter>
+    {/* <Scooter></Scooter> */}
   </React.StrictMode>
 );
 
