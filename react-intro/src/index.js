@@ -18,6 +18,7 @@ import Input from './useStatePropsExer/input';
 import Counter from './useStatePropsExer/Counter';
 import Toggle from './useStatePropsExer/Toggle';
 import CountWord from './useStatePropsExer/wordCounter';
+import Addition from './useStatePropsExer/Addition';
 
 function ReactIntro(){
   return(
@@ -44,7 +45,8 @@ root.render(
     {/* <Input/> */}
     {/* <Counter/> */}
     {/* <Toggle></Toggle> */}
-    <CountWord></CountWord>
+    {/* <CountWord></CountWord> */}
+    <Addition/>
   </React.StrictMode>
 );
 
