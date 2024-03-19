@@ -17,6 +17,7 @@ import Grocery from './useStatePropsExer/Grocery';
 import Input from './useStatePropsExer/input';
 import Counter from './useStatePropsExer/Counter';
 import Toggle from './useStatePropsExer/Toggle';
+import CountWord from './useStatePropsExer/wordCounter';
 
 function ReactIntro(){
   return(
@@ -40,9 +41,10 @@ root.render(
     {/* <Car1></Car1> */}
     {/* <Scooter></Scooter> */}
     {/* <Grocery></Grocery> */}
-    <Input/>
+    {/* <Input/> */}
     {/* <Counter/> */}
     {/* <Toggle></Toggle> */}
+    <CountWord></CountWord>
   </React.StrictMode>
 );
 

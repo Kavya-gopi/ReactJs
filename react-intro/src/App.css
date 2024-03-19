@@ -13,6 +13,35 @@
   }
 }
 
+.word {
+  background-color: plum;
+  width: 300px;
+  padding: 20px;
+  font-family: cursive;
+  margin: 20px auto;
+  margin-top: 25vh;
+  border-radius: 4px;
+  box-shadow: inset 2px 2px 2px gray, 2px 1px 1px grey;
+}
+
+.word input {
+  width: 90%;
+  padding: 5px;
+  border-radius: 3px;
+  border-color: aqua;
+}
+.word input:active {
+  background-color: aqua;
+}
+.word button {
+  margin: 10px;
+  background-color: rgb(160, 16, 193);
+  color: white;
+  font-weight: bolder;
+  font-family: cursive;
+  padding: 5px 10px;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
