@@ -13,6 +13,10 @@ import Brand from './components/useStateUsingClass';
 import Car1 from './components/Car1';
 import Scooter from './components/Scooter';
 import ArrCompUpdate from './components/UpdatingArraysUseState';
+import Grocery from './useStatePropsExer/Grocery';
+import Input from './useStatePropsExer/input';
+import Counter from './useStatePropsExer/Counter';
+import Toggle from './useStatePropsExer/Toggle';
 
 function ReactIntro(){
   return(
@@ -31,10 +35,14 @@ root.render(
     {/* <Garage></Garage> */}
     {/* <Header></Header> */}
     {/* <Color></Color> */}
-    <Brand></Brand>
-    <ArrCompUpdate></ArrCompUpdate>
+    {/* <Brand></Brand> */}
+    {/* <ArrCompUpdate></ArrCompUpdate> */}
     {/* <Car1></Car1> */}
     {/* <Scooter></Scooter> */}
+    {/* <Grocery></Grocery> */}
+    <Input/>
+    {/* <Counter/> */}
+    {/* <Toggle></Toggle> */}
   </React.StrictMode>
 );
 
