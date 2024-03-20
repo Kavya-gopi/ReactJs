@@ -1,33 +1,27 @@
 
 import './App.css'
+import { ChildComponent } from './components/ChildComponent'
+import { Car } from './components/ChildrenandProps/Car'
+import { Scooter } from './components/ChildrenandProps/Scooter'
 import { Header } from './components/Header'
+import { Student } from './components/props'
 
 function App() {
   
 
   return (
     <>
-      <Header></Header>
-      {/* <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p> */}
+      <Student name="Kavya" age={21} isMarried={false}></Student>
+      <Student name="Keerthi" age={23} isMarried={false}></Student>
+      <ChildComponent>
+        <p>This is test1</p>
+        <p>This is test2</p>
+      </ChildComponent>
+      <Car Model="Activa 6G" Brand="Hyundai" price={200000}></Car>
+      <Scooter>
+        <p>Name : "Hero Honda"</p>
+        <p>Brand : "fasino"</p>
+      </Scooter>
     </>
   )
 }

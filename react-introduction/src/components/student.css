@@ -1,0 +1,13 @@
+.student {
+    margin-bottom: 10px;
+}
+
+.student table td,
+.student table th{
+    text-align: left;
+    border:1px solid #000000;
+}
+
+.student table th{
+    width: 100px;
+}
