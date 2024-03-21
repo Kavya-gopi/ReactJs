@@ -3,7 +3,7 @@ export const ChildComponent = (props)=>{
     return (
         <>
         <p>Learning Proptypes and ChildComponents</p>
-        <p>{props.children}</p>
+        {props.children}
         </>
     )
 }
