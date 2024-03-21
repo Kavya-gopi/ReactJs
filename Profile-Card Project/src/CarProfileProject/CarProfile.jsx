@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 const cars=[
     {
         image:"images/Car2.jpg",
@@ -55,4 +56,13 @@ export const CarProfile=()=>{
         features={car.features} />
     ))}
     </>
+}
+
+CarCard.propTypes = {
+    
+        price:PropTypes.string.isRequired,
+        model:PropTypes.string.isRequired,
+        rating:PropTypes.number.isRequired,
+        features:PropTypes.arrayOf(PropTypes.string).isRequired,
+    
 }
