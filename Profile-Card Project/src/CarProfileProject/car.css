@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#root {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.car-container {
+  background-color: #b5deec;
+  border-radius: 5px;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+  color: #b3b8cd;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 350px;
+  max-width: 100%;
+  text-align: center;
+  position: relative;
+  margin-top: 60px;
+}
+
+img{
+    width:250px;
+    height:200px;
+    border-radius: 3px;
+}
+
+.price {
+  color: black;
+  font-weight: bolder;
+  border: 2px solid rgb(14, 13, 13);
+  background-color: #ffffff;
+  padding: 3px 7px;
+  text-align: center;
+}
+
+h3 {
+  font-family: cursive;
+  font-size: 24px;
+  color: rgb(237, 11, 11);
+  background-color: white;
+}
+
+p {
+    color:rgb(20, 20, 20);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+h4{
+    /* text-align: left; */
+    margin:5px 0;
+    text-transform: uppercase;
+    color:rgb(52, 46, 46);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li{
+    display: inline-block;
+    color:black;
+    border:3px double rgb(30, 117, 189);
+    padding: 7px;
+    margin:0 7px 7px 0;
+    font-size: 12px;
+}
+
+button{
+    background-color: blue;
+    color: white;
+    padding:5px 20px;
+    border-radius: 5px;
+    border-color: #ffffff;
+    cursor: pointer;
+    font-family: cursive;
+    margin-top: 5px;
+    font-weight: 600;
+}
