@@ -1,3 +1,4 @@
+import PropTpes from 'prop-types';
 const UserDatas = [
   {
     name: "Keerthika P",
@@ -72,3 +73,11 @@ export const UserData = () => {
     ))}
   </>;
 };
+
+User.propTypes = {
+  name:PropTpes.string.isRequired,
+  city:PropTpes.string.isRequired,
+  description:PropTpes.string.isRequired,
+  isOnline:PropTpes.bool.isRequired,
+  skills:PropTpes.arrayOf(PropTpes.string).isRequired,
+}
