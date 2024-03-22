@@ -8,7 +8,7 @@ export const QrCodeGen=()=>{
     async function GenerateQR(){
         setLoading(true);
         try{
-           const url = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(inputData)}`;
+           const url = `https://api.qrserver.com/v1/create-qr-code/?size=${inputSize}x${inputSize}&data=${encodeURIComponent(inputData)}`;
            setImg(url);
         }
         catch(error){
