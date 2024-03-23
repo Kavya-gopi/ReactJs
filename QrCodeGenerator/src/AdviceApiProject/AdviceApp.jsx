@@ -1,7 +1,7 @@
 import { useState,useEffect } from "react";
 import './AdviceApp.css';
 export const AdviceApp=()=>{
-    const [advice,setAdvice] = useState('Eat Well,Sleep Well');
+    const [advice,setAdvice] = useState('');
     const [count,setCount] = useState(0);
 
     async function getAdvice(){
@@ -10,17 +10,18 @@ export const AdviceApp=()=>{
         setAdvice(data.slip.advice);
         setCount((count)=>count+1);
     }
-    // useEffect(function(){
-    //     getAdvice();
-    // },[]); 
+    useEffect(function() {
+        // console.log("Page Rendering")
+        getAdvice()
+    },[]); 
 
     return(
-        <>
+        
         <div className="app">
         <h3>{advice}</h3>
         <button onClick={getAdvice}>Get Advice</button>
         <p>You Have read <span>{count}</span> pieces of advice</p>
         </div>
-        </>
+        
     )
 }
