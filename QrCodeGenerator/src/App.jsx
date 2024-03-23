@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { QrCodeGen } from './QrCode/QrCodeGenerator'
 import { Cart } from './useStateDemos/Cart'
+import { UserData } from './useStateDemos/formsSample'
+import { Users } from './useStateDemos/formsObjectstate'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import './App.css'
@@ -11,7 +13,9 @@ function App() {
   return (
     <>
       {/* <QrCodeGen></QrCodeGen> */}
-      <Cart></Cart>
+      {/* <Cart></Cart> */}
+      {/* <UserData></UserData> */}
+      <Users></Users>
 
     </>
   )
