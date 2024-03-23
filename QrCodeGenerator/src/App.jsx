@@ -4,6 +4,7 @@ import { Cart } from './useStateDemos/Cart'
 import { UserData } from './useStateDemos/formsSample'
 import { Users } from './useStateDemos/formsObjectstate'
 import { UserDatas } from './forms/UserDetails'
+import { AdviceApp } from './AdviceApiProject/AdviceApp'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import './App.css'
@@ -17,7 +18,8 @@ function App() {
       {/* <Cart></Cart> */}
       {/* <UserData></UserData> */}
       {/* <Users></Users> */}
-      <UserDatas></UserDatas>
+      {/* <UserDatas></UserDatas> */}
+      <AdviceApp/>
 
     </>
   )
