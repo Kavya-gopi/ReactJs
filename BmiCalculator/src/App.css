@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  width:100vw;
+  height:100vh;
+  background-color: plum;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bmiContainer{
+  background-color: #ffffff;
+  width:500px;
+  padding:20px 40px;
+  text-align: center;
+  border-radius: 3px;
+ 
+  
+}
+
+h1{
+  text-transform: uppercase;
+  font-size: 18px;
+  color:purple;
+}
+.input-fields{
+  display: flex;
+  flex-direction: column;
+  margin:20px;
+  gap:20px;
+} 
+
+button{
+  background-color: purple;
+  color:#ffffff;
+  font-weight: 600;
+  padding:10px;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+}
+
+.calculate{
+  background-color: rgb(121, 121, 232);
+  border: none;
+}
+
+.clear{
+  background-color: rgb(241, 68, 68);
+  border:none;
+}
+
+.input{
+  display: flex;
+  flex-direction: column;
+}
+
+input{
+  padding:7px;
+  border-color: plum;
+  outline: none;
+  border-radius: 5px;
+}
+
+label{
+  font-size: 16px;
+  color:rgb(88, 85, 85);
+  margin-bottom: 2px;
+}
+
+.result{
+  border: 2px solid purple;
+  border-radius: 5px;
+  text-align: left;
+  padding-left: 5px;
+  font-size: 14px;
+  padding:10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+span{
+  color:purple;
+  font-weight: 600;
+}
+
+.error{
+  color:red;
+}
