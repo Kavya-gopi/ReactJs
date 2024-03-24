@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import PropTypes from 'prop-types';
 
 import './App.css'
 //Images import 
@@ -56,11 +57,22 @@ const WeatherDetails=({icon,temp,city,country,lat,log,wind,humidity})=>{
   )
 }
 
+WeatherDetails.PropTypes={
+  icon:PropTypes.string.isRequired,
+  temp:PropTypes.number.isRequired,
+  city:PropTypes.string.isRequired,
+  country:PropTypes.string.isRequired,
+  humidity:PropTypes.number.isRequired,
+  wind:PropTypes.number.isRequired,
+  lat:PropTypes.number.isRequired,
+  log:PropTypes.number.isRequired,
+}
+
 function App() {
    const [icon,setIcon] = useState(snowIcon);
    const [temp,setTemp] = useState(0);
-   const [city,setCity] = useState('Chennai');
-   const [country,setCountry] = useState('IN');
+   const [city,setCity] = useState('');
+   const [country,setCountry] = useState('');
    const [lat,setLat] = useState(0);
    const [log,setLog] = useState(0);
    const [humidity,setHumidity] = useState(0);
@@ -68,6 +80,7 @@ function App() {
    const [text,setText] = useState('Chennai');
    const [cityNotFound,setCityNotFound] = useState(false);
    const [loading,setLoading] = useState(false);
+   const [error,setError] = useState(null);
    const apikey = 'b536644be34cf90952942ec683af5d4f';
 
    const weatherIconMap ={
@@ -112,6 +125,7 @@ function App() {
 
     }catch(error){
       console.error("An error Occured",error);
+      setError("An error occured in fetching..");
     }
     finally{
        setLoading(false);
@@ -129,6 +143,10 @@ function App() {
      }
    }
 
+   useEffect(function(){
+    search();
+   },[])
+
   return (
     <>
       <div className='app-container'>
@@ -139,8 +157,11 @@ function App() {
            onKeyDown={handleKeyDown}/>
           <img src={searchIcon} alt='searchimg' className='search-img' onClick={()=>search()}/>
         </div>
-        <WeatherDetails icon={icon} temp={temp} city={city} country={country}
-          lat={lat} log={log} wind={wind} humidity={humidity}/>
+        {loading  && <p className='loading-message'>Loading.. Please Wait...</p>}
+        {error && <p className='error-message'>{error}</p>}
+        {cityNotFound && <p className='city-not-error'>City Not Found</p>}
+        {!loading && !cityNotFound && <WeatherDetails icon={icon} temp={temp} city={city} country={country}
+          lat={lat} log={log} wind={wind} humidity={humidity}/>}
       </div>
      </>
   )

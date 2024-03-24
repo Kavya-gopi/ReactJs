@@ -124,6 +124,14 @@ body {
   margin-bottom: 10px;
 }
 
+.city-not-error,
+.error-message,
+.loading-message{
+  margin-top:30px;
+  font-weight: 500;
+  color:#888;
+  text-align: center;
+}
 
 
 
