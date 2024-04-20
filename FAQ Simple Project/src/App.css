@@ -1,0 +1,37 @@
+body {
+  background-color: rgb(32, 32, 34);
+  /* max-width: 800px; */
+  color: white;
+}
+.App{
+  max-width: 800px;
+  margin: 0 auto;
+}
+h2 {
+  text-align: center;
+}
+.faq-item {
+  margin: 20px;
+}
+.faq-item-header {
+  background-color: rgb(241, 239, 237);
+  color: black;
+  padding: 10px 0 10px 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.faq-item-body {
+  /* border: 2px solid #ccc; */
+  border-radius: 3px;
+  max-height:0px;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.faq-item-body-content {
+  margin: 10px;
+  /* padding:15px; */
+}
+.faq-item.active .faq-item-body{
+   max-height: 300px;
+}
