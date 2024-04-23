@@ -16,6 +16,8 @@ import DataFetching1 from "./useEffectHooks/DataFetching1.jsx";
 import DataFetching2 from "./useEffectHooks/DataFetching2.jsx";
 import { ToggleVisibility } from "./useStateExercises/ToggleVisibility.jsx";
 import { TodoList } from "./useStateExercises/TodoList.jsx";
+import App1 from "./useContextDemos/App1.jsx";
+import AppComp from "./useContextDemos2/AppComp.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -33,6 +35,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <DataFetching1 />
     <DataFetching2 /> */}
     {/* <ToggleVisibility/> */}
-    <TodoList/>
+    {/* <TodoList/> */}
+    {/* <App1></App1> */}
+    <AppComp/>
   </React.StrictMode>
 );
