@@ -14,10 +14,12 @@ import UseEffectDemo1 from "./useEffectHooks/UseEffectDemo1.jsx";
 import DataFetching from "./useEffectHooks/DataFetching.jsx";
 import DataFetching1 from "./useEffectHooks/DataFetching1.jsx";
 import DataFetching2 from "./useEffectHooks/DataFetching2.jsx";
+import { ToggleVisibility } from "./useStateExercises/ToggleVisibility.jsx";
+import { TodoList } from "./useStateExercises/TodoList.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
+    {/* <App />
     <PostComment></PostComment>
     <HookCounter2 />
     <HookObject />
@@ -29,6 +31,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <UseEffectDemo1 />
     <DataFetching />
     <DataFetching1 />
-    <DataFetching2 />
+    <DataFetching2 /> */}
+    {/* <ToggleVisibility/> */}
+    <TodoList/>
   </React.StrictMode>
 );
