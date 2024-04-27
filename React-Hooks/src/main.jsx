@@ -18,6 +18,11 @@ import { ToggleVisibility } from "./useStateExercises/ToggleVisibility.jsx";
 import { TodoList } from "./useStateExercises/TodoList.jsx";
 import App1 from "./useContextDemos/App1.jsx";
 import AppComp from "./useContextDemos2/AppComp.jsx";
+import { ReducerDemo } from "./useReducerDemo/ReducerDemo.jsx";
+import { ReducerDemo1 } from "./useReducerDemo/ReducerDemo1.jsx";
+import ReducerDemo2 from "./useReducerDemo/ReducerDemo2.jsx";
+
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -37,6 +42,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     {/* <ToggleVisibility/> */}
     {/* <TodoList/> */}
     {/* <App1></App1> */}
-    <AppComp/>
+    {/* <AppComp/> */}
+    {/* <ReducerDemo/> */}
+    {/* <ReducerDemo1/> */}
+    <ReducerDemo2/>
+    
+   
   </React.StrictMode>
 );
