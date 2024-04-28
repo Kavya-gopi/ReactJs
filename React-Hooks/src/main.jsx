@@ -25,6 +25,7 @@ import TodoListDemo from "./useReducerDemo/TodoListDemo.jsx";
 import TodoDemo2 from "./useReducerDemo/TodoDemo2.jsx";
 import TodoListAddBtn from "./useReducerDemo/TodoListAddBtn.jsx";
 import DataFetch from "./useReducerFetchData/DataFetch.jsx";
+import DataFetch1 from "./useReducerFetchData/DataFetch1.jsx";
 
 
 
@@ -53,7 +54,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     {/* <TodoListDemo/> */}
     {/* <TodoDemo2/>/ */}
     {/* <TodoListAddBtn/> */}
-    <DataFetch/>
+    {/* <DataFetch/> */}
+    <DataFetch1/>
     
 
     
