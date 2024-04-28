@@ -21,6 +21,8 @@ import AppComp from "./useContextDemos2/AppComp.jsx";
 import { ReducerDemo } from "./useReducerDemo/ReducerDemo.jsx";
 import { ReducerDemo1 } from "./useReducerDemo/ReducerDemo1.jsx";
 import ReducerDemo2 from "./useReducerDemo/ReducerDemo2.jsx";
+import TodoListDemo from "./useReducerDemo/TodoListDemo.jsx";
+import TodoDemo2 from "./useReducerDemo/TodoDemo2.jsx";
 
 
 
@@ -45,7 +47,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     {/* <AppComp/> */}
     {/* <ReducerDemo/> */}
     {/* <ReducerDemo1/> */}
-    <ReducerDemo2/>
+    {/* <ReducerDemo2/> */}
+    <TodoListDemo/>
+    <TodoDemo2/>/
+    
+
     
    
   </React.StrictMode>
