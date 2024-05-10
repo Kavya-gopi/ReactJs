@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Form from "react-bootstrap/Form";
 import { useDispatch, useSelector } from "react-redux";
-import { updateTodoList } from "../Slicescrud/TodoSlice";
+import { updateTasksToServer, updateTodoList } from "../Slicescrud/TodoSlice";
 
 function MyVerticallyCenteredModal(props) {
     const [title,setTitle]=useState('');
@@ -13,7 +13,7 @@ function MyVerticallyCenteredModal(props) {
     const dispatch=useDispatch();
     const updateTask=()=>{
         console.log("updating...")
-        dispatch(updateTodoList({id,title,description}));
+        dispatch(updateTasksToServer({id,title,description}));
         props.onHide();
     }
 
