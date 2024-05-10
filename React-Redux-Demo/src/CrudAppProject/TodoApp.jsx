@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import { addTodoList } from "../Slicescrud/TodoSlice";
+import { addTasksToServer, addTodoList } from "../Slicescrud/TodoSlice";
 import {useDispatch} from "react-redux";
 
 function TodoApp() {
@@ -11,7 +11,7 @@ function TodoApp() {
   const addTask=(e)=>{
      e.preventDefault();
      console.log({title,description});
-     dispatch(addTodoList({title,description}));
+     dispatch(addTasksToServer({title,description}));
      setTitle('');
      setDescription('');
   }
